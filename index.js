@@ -8,7 +8,7 @@ app.use(express.json());
 const resendApiKey = process.env.RESEND_API_KEY;
 const adminkey = process.env.ADMIN_KEY;
 if (!resendApiKey) {
-  console.error("RESEND_API_KEY or ADMIN_KEY environment variable not set!");
+  console.error("RESEND_API_KEY or ADMIN_KEY environment variable not set yet!");
   process.exit(1);
 }
 
